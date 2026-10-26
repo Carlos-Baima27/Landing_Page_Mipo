@@ -4,6 +4,8 @@ import companyLogo from './assets/logomipo.jpg'
 
 const whatsappMessage = encodeURIComponent('Olá! Gostaria de saber o preço de uma entrega com a Mipo.')
 const whatsappUrl = `https://wa.me/5547997628214?text=${whatsappMessage}`
+const googleMapsUrl = 'https://www.google.com/maps/place/Mipo+Express/@-26.992972,-48.6320208,17z/data=!3m1!4b1!4m6!3m5!1s0x94d8b79f56f3262b:0x423564aaae90b84b!8m2!3d-26.992972!4d-48.6320208!16s%2Fg%2F11xzqwt14g'
+const instagramUrl = 'https://www.instagram.com/mipo_express/'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header class="site-header">
@@ -75,7 +77,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </div>
         <div>
           <dt>Horário</dt>
-          <dd>Todos os dias, das 07h às 00h</dd>
+          <dd>Atendimento 24 horas, todos os dias</dd>
         </div>
         <div>
           <dt>Formas de pagamento</dt>
@@ -83,7 +85,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </div>
         <div>
           <dt>Endereço</dt>
-          <dd>R. 1950, 321 - Centro, Balneário Camboriú - SC</dd>
+          <dd>
+            R. 1950, 321 - Centro, Balneário Camboriú - SC, 88330-470<br />
+            <a href="${googleMapsUrl}" target="_blank" rel="noopener noreferrer">Ver no Google Maps</a>
+          </dd>
         </div>
       </dl>
     </section>
@@ -124,20 +129,21 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <h2 id="titulo-rodape" class="footer-brand">
           <img src="${companyLogo}" alt="Mipo Express" />
         </h2>
-        <address>R. 1950, 321 - Centro, Balneário Camboriú - SC</address>
+        <address>R. 1950, 321 - Centro, Balneário Camboriú - SC, 88330-470</address>
       </div>
       <div>
         <h3>Atendimento</h3>
-        <p>Todos os dias, das 07h às 00h</p>
+        <p>24 horas, todos os dias</p>
       </div>
       <div>
         <h3>Formas de pagamento</h3>
         <p>Dinheiro, Pix e Cartão</p>
       </div>
       <div>
-        <h3>WhatsApp</h3>
+        <h3>Contato e redes sociais</h3>
         <p><a href="${whatsappUrl}">Fale com a Mipo</a></p>
         <p>Número: <span>+55 47 99762-8214</span></p>
+        <p><a href="${instagramUrl}" target="_blank" rel="noopener noreferrer">Instagram: @mipo_express</a></p>
       </div>
     </div>
   </footer>
