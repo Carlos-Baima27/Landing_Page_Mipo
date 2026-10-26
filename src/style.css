@@ -84,6 +84,18 @@ button:focus-visible {
   text-underline-offset: 0.2em;
 }
 
+.site-header nav a:last-child {
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.5rem;
+  background: var(--color-action);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-header nav a:last-child:hover {
+  background: #e85b12;
+}
+
 main > section {
   padding-block: var(--space-section);
   scroll-margin-top: 1.5rem;
@@ -94,16 +106,97 @@ main > section + section {
 }
 
 #inicio {
-  max-width: 52rem;
-  padding-block: clamp(5rem, 14vw, 10rem);
+  display: grid;
+  max-width: none;
+  grid-template-columns: minmax(0, 1.1fr) minmax(14rem, 0.9fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+  padding-block: clamp(3.5rem, 8vw, 6rem);
 }
 
-#inicio > p:first-child {
+.hero-copy > p:first-child {
   color: #8a3a0d;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.hero-copy > p {
+  max-width: 38rem;
+}
+
+.hero-illustration {
+  margin: 0;
+}
+
+.illustration-art {
+  position: relative;
+  display: grid;
+  min-height: 18rem;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 50% 42% 48% 38%;
+  background: var(--color-surface);
+}
+
+.illustration-package {
+  position: relative;
+  z-index: 1;
+  width: 8rem;
+  height: 7rem;
+  transform: rotate(-8deg);
+  border: 3px solid var(--color-text);
+  border-radius: 0.5rem;
+  background: var(--color-action);
+  box-shadow: 0.8rem 0.8rem 0 var(--color-text);
+}
+
+.illustration-package::before {
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  width: 2.5rem;
+  height: 100%;
+  transform: translateX(-50%);
+  border-inline: 3px solid var(--color-text);
+  background: var(--color-background);
+  content: '';
+}
+
+.illustration-route {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  transform: rotate(-20deg);
+  border: 2px dashed #8a3a0d;
+  border-color: #8a3a0d transparent transparent;
+  border-radius: 50%;
+}
+
+.illustration-dot {
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--color-action);
+}
+
+.illustration-dot-one {
+  top: 25%;
+  left: 24%;
+}
+
+.illustration-dot-two {
+  right: 20%;
+  bottom: 24%;
+}
+
+.hero-illustration figcaption {
+  margin-top: 0.75rem;
+  color: #46515b;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 h1,
@@ -139,7 +232,7 @@ p {
   line-height: 1.65;
 }
 
-#inicio > a {
+.hero-copy > a {
   display: inline-flex;
   min-height: 3rem;
   align-items: center;
@@ -155,7 +248,7 @@ p {
   text-decoration: none;
 }
 
-#inicio > a:hover {
+.hero-copy > a:hover {
   background: #e85b12;
   border-color: #e85b12;
 }
@@ -170,6 +263,180 @@ p {
 #cobertura,
 #contato {
   padding-inline: clamp(1.25rem, 5vw, 4rem);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-background);
+}
+
+.service-card h3,
+.benefits h3 {
+  margin: 0 0 0.75rem;
+  color: var(--color-text);
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.service-card p {
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.service-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #71300c;
+  font-weight: 700;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+.benefits {
+  margin-top: 3rem;
+}
+
+.benefits ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem 2rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.benefits li {
+  line-height: 1.6;
+}
+
+.operations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 0;
+}
+
+.operations-grid > div {
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  background: var(--color-surface);
+}
+
+.operations-grid dt {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.operations-grid dd {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 54rem;
+  margin-top: 2rem;
+}
+
+.faq-list details {
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  background: var(--color-background);
+}
+
+.faq-list summary {
+  color: var(--color-text);
+  font-weight: 700;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.faq-list details p {
+  margin: 0.75rem 0 0;
+  font-size: 1rem;
+}
+
+.faq-list a {
+  color: #71300c;
+  font-weight: 700;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+.contact-cta {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid var(--color-action);
+  border-radius: 0.5rem;
+  background: var(--color-action);
+  color: var(--color-text);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-cta:hover {
+  border-color: #e85b12;
+  background: #e85b12;
+}
+
+.site-footer {
+  margin-top: var(--space-section);
+  padding: 2.5rem clamp(1.25rem, 5vw, 4rem);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.footer-details {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.footer-details h2,
+.footer-details h3 {
+  margin: 0 0 0.75rem;
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.footer-details h2 {
+  font-size: 1.25rem;
+}
+
+.footer-details p,
+.footer-details address {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.footer-details a {
+  color: #71300c;
+  font-weight: 700;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
 }
 
 @media (max-width: 760px) {
@@ -195,7 +462,22 @@ p {
   }
 
   #inicio {
+    grid-template-columns: 1fr;
     padding-block: 5rem;
+  }
+
+  .hero-illustration {
+    max-width: 28rem;
+  }
+
+  .service-grid,
+  .benefits ul,
+  .operations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -214,6 +496,10 @@ p {
 
   p {
     font-size: 1rem;
+  }
+
+  .footer-details {
+    grid-template-columns: 1fr;
   }
 }
 

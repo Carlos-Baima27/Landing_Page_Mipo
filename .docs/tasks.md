@@ -35,24 +35,24 @@ Este checklist decompõe o [PRD da landing page Mipo](../.docs/prd.md). Consulte
 
 ## Fase 3 — Conteúdo e jornadas
 
-- [ ] **T007 — Implementar cabeçalho e navegação por seções** (PRD: §11, §12, REQ-003, REQ-013). Criar o cabeçalho em `src/main.ts` e seus estilos em `src/style.css`, com links para serviços, cobertura e FAQ e CTA de contato.
+- [x] **T007 — Implementar cabeçalho e navegação por seções** (PRD: §11, §12, REQ-003, REQ-013). Criar o cabeçalho em `src/main.ts` e seus estilos em `src/style.css`, com links para serviços, cobertura e FAQ e CTA de contato.
   **Aprovação:** cada link leva à seção correta; navegação e CTA são operáveis por teclado, têm rótulos claros e foco visível; o cabeçalho continua utilizável em telas pequenas.
 
-- [ ] **T008 — Implementar o hero e seu placeholder visual** (PRD: §11, §12, REQ-001, REQ-002, REQ-003, REQ-011). Apresentar a proposta de entrega expressa regional, um complemento curto e o CTA principal. Usar imagem real somente se aprovada em T002; caso contrário, usar placeholder explicitamente ilustrativo.
+- [x] **T008 — Implementar o hero e seu placeholder visual** (PRD: §11, §12, REQ-001, REQ-002, REQ-003, REQ-011). Apresentar a proposta de entrega expressa regional, um complemento curto e o CTA principal. Usar imagem real somente se aprovada em T002; caso contrário, usar placeholder explicitamente ilustrativo.
   **Aprovação:** em telas comuns, a primeira dobra comunica o serviço e mostra o CTA principal; o CTA abre o contato definido em T006; nenhuma imagem sugere representar a equipe ou a frota real sem autorização.
 
-- [ ] **T009 — Apresentar serviços e diferenciais** (PRD: §4, §11, §12, REQ-004, REQ-005). Distinguir entregas avulsas, contratos fixos/mensais para empresas e coleta/entrega de documentos ou encomendas; apresentar agilidade, cuidado/segurança e cobertura regional sem promessas não confirmadas.
+- [x] **T009 — Apresentar serviços e diferenciais** (PRD: §4, §11, §12, REQ-004, REQ-005). Distinguir entregas avulsas, contratos fixos/mensais para empresas e coleta/entrega de documentos ou encomendas; apresentar agilidade, cuidado/segurança e cobertura regional sem promessas não confirmadas.
   **Aprovação:** visitantes conseguem diferenciar as modalidades e identificar um caminho de contato; não há prazos, garantias ou resultados operacionais inventados.
 
-- [ ] **T010 — Apresentar cobertura e informações operacionais** (PRD: §6, §7, REQ-006, REQ-007, SYS-007). Exibir as cidades confirmadas, horário, pagamentos e endereço somente em conformidade com as informações aprovadas.
+- [x] **T010 — Apresentar cobertura e informações operacionais** (PRD: §6, §7, REQ-006, REQ-007, SYS-007). Exibir as cidades confirmadas, horário, pagamentos e endereço somente em conformidade com as informações aprovadas.
   **Pré-requisito:** T001.
   **Aprovação:** Balneário Camboriú e Camboriú são as únicas cidades apresentadas como confirmadas; horário e pagamentos coincidem com o PRD corrigido; o endereço, quando exibido, é “R. 1950, 321 - Centro, Balneário Camboriú - SC”.
 
-- [ ] **T011 — Implementar o FAQ** (PRD: §7, §11, §12, REQ-008). Responder como solicitar uma entrega, quais cidades são atendidas e quais formas de pagamento são aceitas. Direcionar dúvidas sem resposta confirmada ao WhatsApp, sem criar políticas.
+- [x] **T011 — Implementar o FAQ** (PRD: §7, §11, §12, REQ-008). Responder como solicitar uma entrega, quais cidades são atendidas e quais formas de pagamento são aceitas. Direcionar dúvidas sem resposta confirmada ao WhatsApp, sem criar políticas.
   **Pré-requisito:** T001 e T010.
   **Aprovação:** as três perguntas mínimas têm respostas coerentes com o conteúdo da página; dúvidas não confirmadas levam ao contato; controles expansíveis, se usados, funcionam por teclado e têm rótulos acessíveis.
 
-- [ ] **T012 — Implementar contato final e rodapé** (PRD: §6, §11, §12, REQ-003, REQ-009). Repetir CTA e dados de contato no rodapé em `src/main.ts`, mantendo estilos consistentes em `src/style.css`.
+- [x] **T012 — Implementar contato final e rodapé** (PRD: §6, §11, §12, REQ-003, REQ-009). Repetir CTA e dados de contato no rodapé em `src/main.ts`, mantendo estilos consistentes em `src/style.css`.
   **Pré-requisito:** T001 e T006.
   **Aprovação:** o rodapé apresenta endereço, horário, formas de pagamento e link para WhatsApp coerentes com as demais seções; dados de endereço e contato são texto selecionável; links sociais só aparecem se os perfis oficiais tiverem sido confirmados.
 
