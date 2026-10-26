@@ -40,6 +40,18 @@ a {
 
 a {
   color: inherit;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease,
+    text-decoration-color 160ms ease;
+}
+
+a:not(.site-brand):hover,
+a:not(.site-brand):focus-visible {
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0 0.25rem #fff0e6;
+  color: #71300c;
 }
 
 .icon {
@@ -126,7 +138,9 @@ button:focus-visible {
 }
 
 .site-header nav a:last-child:hover {
-  background: #e85b12;
+  border-radius: 0.5rem;
+  background: #ffc29f;
+  box-shadow: none;
 }
 
 main > section {
@@ -231,8 +245,9 @@ p {
 }
 
 .hero-copy > a:hover {
-  background: #e85b12;
-  border-color: #e85b12;
+  background: #ffc29f;
+  border-color: #f6ae82;
+  box-shadow: none;
 }
 
 #servicos,
@@ -424,8 +439,9 @@ p {
 }
 
 .contact-cta:hover {
-  border-color: #e85b12;
-  background: #e85b12;
+  border-color: #f6ae82;
+  background: #ffc29f;
+  box-shadow: none;
 }
 
 .site-footer {
@@ -565,5 +581,9 @@ p {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  a {
+    transition: none;
   }
 }
