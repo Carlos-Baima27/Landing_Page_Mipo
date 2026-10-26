@@ -17,7 +17,7 @@ Landing page de alta conversão para serviço de motoboy/entregas expressas em B
 ## 🎯 Objetivo Principal
 
 - Converter visitantes em contatos diretos no WhatsApp.
-- Mensagem padrão preenchida no link do WhatsApp (ex: _"Olá! Gostaria de cotar uma entrega com a Mipo..."_).
+- Mensagem padrão preenchida no link do WhatsApp (ex: _"Olá! Gostaria de saber o preço de uma entrega com a Mipo..."_).
 
 ---
 

@@ -2,7 +2,7 @@ import './style.css'
 import companyImage from './assets/empresa.jpg'
 import companyLogo from './assets/logomipo.jpg'
 
-const whatsappMessage = encodeURIComponent('Olá! Gostaria de cotar uma entrega com a Mipo.')
+const whatsappMessage = encodeURIComponent('Olá! Gostaria de saber o preço de uma entrega com a Mipo.')
 const whatsappUrl = `https://wa.me/5547997628214?text=${whatsappMessage}`
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `

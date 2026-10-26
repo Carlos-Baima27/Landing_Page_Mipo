@@ -119,7 +119,7 @@ Pessoas que precisam enviar ou retirar documentos, chaves ou encomendas na regi�
 ## 8. Requisitos funcionais
 
 - **REQ-001 — Apresentação da proposta:** a página deve explicar que a Mipo oferece serviço de motoboy/entregas expressas na região de Balneário Camboriú.
-- **REQ-002 — Contato por WhatsApp:** os CTAs de contato devem apontar para o número `+55 47 99762-8214` e abrir uma mensagem pré-preenchida, por exemplo: “Olá! Gostaria de cotar uma entrega com a Mipo.”
+- **REQ-002 — Contato por WhatsApp:** os CTAs de contato devem apontar para o número `+55 47 99762-8214` e abrir uma mensagem pré-preenchida, por exemplo: “Olá! Gostaria de saber o preço de uma entrega com a Mipo.”
 - **REQ-003 — CTA consistente:** o CTA principal deve ser visível na primeira dobra em telas comuns e deve haver acesso ao contato após as seções de serviços e informações finais.
 - **REQ-004 — Serviços:** a página deve apresentar entregas expressas avulsas, contratos fixos/mensais para empresas e coleta/entrega de documentos ou encomendas.
 - **REQ-005 — Diferenciais:** a página deve explicar agilidade no atendimento, segurança no manuseio/entrega e cobertura regional, sem afirmar tempos, garantias ou resultados não confirmados.
