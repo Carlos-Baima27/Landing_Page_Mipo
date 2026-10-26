@@ -29,6 +29,7 @@ html {
 body {
   min-width: 320px;
   margin: 0;
+  overflow-x: clip;
 }
 
 body,
@@ -41,6 +42,13 @@ a {
   color: inherit;
 }
 
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 a:focus-visible,
 button:focus-visible {
   outline: 3px solid var(--color-text);
@@ -49,7 +57,8 @@ button:focus-visible {
 }
 
 #app {
-  width: min(100% - 3rem, var(--content-width));
+  width: min(calc(100% - 3rem), var(--content-width));
+  max-width: var(--content-width);
   margin-inline: auto;
 }
 
@@ -441,7 +450,7 @@ p {
 
 @media (max-width: 760px) {
   #app {
-    width: min(100% - 2rem, var(--content-width));
+    width: min(calc(100% - 2rem), var(--content-width));
   }
 
   .site-header {
@@ -483,7 +492,7 @@ p {
 
 @media (max-width: 420px) {
   #app {
-    width: min(100% - 1.5rem, var(--content-width));
+    width: min(calc(100% - 1.5rem), var(--content-width));
   }
 
   .site-header nav {

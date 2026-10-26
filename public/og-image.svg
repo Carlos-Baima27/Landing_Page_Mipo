@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Mipo Express</title>
+  <desc id="desc">Ilustração neutra com mapa, pacote e texto Mipo Express.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff7ef"/>
+      <stop offset="100%" stop-color="#f6f1eb"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7a34a"/>
+      <stop offset="100%" stop-color="#ee6a2a"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4ec0ec"/>
+      <stop offset="100%" stop-color="#1a8dc7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.9">
+    <path d="M92 470c160-105 310-157 447-154 114 2 233 43 377 119l-41 62H126l-34-27z" fill="#f5e5d6"/>
+    <path d="M125 471c170-90 281-129 420-123 114 5 230 46 390 131" fill="none" stroke="#eb8f32" stroke-width="12" stroke-linecap="round" stroke-dasharray="18 24"/>
+  </g>
+  <g transform="translate(135 138)">
+    <rect x="0" y="96" width="390" height="220" rx="30" fill="#fff"/>
+    <rect x="46" y="38" width="120" height="120" rx="28" fill="url(#orange)"/>
+    <path d="M83 66h45v62H83z" fill="#fff" opacity="0.9"/>
+    <path d="M96 104h19l-10 24-18-18 9-6z" fill="#f26a21"/>
+    <path d="M116 80h22v8h-22zm0 18h22v8h-22zm0 18h22v8h-22z" fill="#fff" opacity="0.8"/>
+    <circle cx="305" cy="165" r="40" fill="url(#blue)"/>
+    <path d="M286 165h38" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+    <path d="M305 146v38" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+    <g fill="#17212b">
+      <text x="202" y="120" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="800">Mipo</text>
+      <text x="202" y="176" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#6c7178">Entregas expressas</text>
+      <text x="202" y="214" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#37536b">Balneário Camboriú e Camboriú</text>
+    </g>
+  </g>
+  <g transform="translate(710 128)">
+    <rect x="0" y="74" width="300" height="220" rx="32" fill="#fff"/>
+    <path d="M70 210c0-45 34-82 76-82s76 37 76 82" fill="none" stroke="#155d8a" stroke-width="12" stroke-linecap="round"/>
+    <path d="M112 168l54-68 54 68" fill="none" stroke="#f26a21" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="118" cy="254" r="22" fill="#f26a21"/>
+    <circle cx="203" cy="254" r="22" fill="#1a8dc7"/>
+    <circle cx="223" cy="118" r="18" fill="#f7a34a"/>
+    <circle cx="52" cy="168" r="16" fill="#4ec0ec"/>
+    <path d="M266 154l34-42 18 13-18 42z" fill="#f26a21" opacity="0.9"/>
+  </g>
+</svg>

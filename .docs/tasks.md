@@ -58,12 +58,12 @@ Este checklist decompõe o [PRD da landing page Mipo](../.docs/prd.md). Consulte
 
 ## Fase 4 — Metadados, qualidade e publicação
 
-- [ ] **T013 — Atualizar metadados, idioma e ícone da página** (PRD: §10, REQ-012, SYS-008). Atualizar `index.html` com `pt-BR`, título, descrição e metadados Open Graph coerentes com o negócio e a região; atualizar `public/favicon.svg` com ícone aprovado ou fallback neutro; usar imagem de compartilhamento aprovada ou fallback neutro.
+- [x] **T013 — Atualizar metadados, idioma e ícone da página** (PRD: §10, REQ-012, SYS-008). Atualizar `index.html` com `pt-BR`, título, descrição e metadados Open Graph coerentes com o negócio e a região; atualizar `public/favicon.svg` com ícone aprovado ou fallback neutro; usar imagem de compartilhamento aprovada ou fallback neutro.
   **Aprovação:** título, descrição, idioma e favicon não são os valores/recursos de demonstração do scaffold; metadados de compartilhamento estão presentes e não usam imagem ou alegação não aprovada; não há marcação de cidades não confirmadas nem dados estruturados de avaliações.
 
-- [ ] **T014 — Validar responsividade, acessibilidade, conteúdo e build** (PRD: §3, §9, §13, SYS-002 a SYS-009). Verificar a página em larguras móveis e desktop, teclado e tecnologias assistivas, principais navegadores atuais e fluxo de contato; corrigir problemas encontrados.
+- [x] **T014 — Validar responsividade, acessibilidade, conteúdo e build** (PRD: §3, §9, §13, SYS-002 a SYS-009). Verificar a página em larguras móveis e desktop, teclado e tecnologias assistivas, principais navegadores atuais e fluxo de contato; corrigir problemas encontrados.
   **Aprovação:** `npm run build` conclui sem erros; em viewport de 320 px ou maior não há rolagem horizontal causada pelo layout nem conteúdo essencial cortado; foco, semântica, rótulos, textos alternativos e contraste atendem ao objetivo WCAG 2.2 AA; WhatsApp abre o destino correto e o número permanece acessível; não há coleta/persistência de dados de entrega, prova social não autorizada ou cidades não confirmadas. Registrar resultados das verificações e, quando mensurável, comparar LCP, INP e CLS aos objetivos do PRD.
 
-- [ ] **T015 — Configurar e verificar a publicação estática** (PRD: §1, §10, SYS-001).
+- [x] **T015 — Configurar e verificar a publicação estática** (PRD: §1, §10, SYS-001).
   **Pré-requisito:** T003 e T014.
   **Aprovação:** o build estático é publicado na plataforma escolhida sem exigir servidor de aplicação; a URL de preview/produção carrega a página e seus recursos, e os CTAs de contato continuam funcionando.
