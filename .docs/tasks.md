@@ -24,13 +24,13 @@ Este checklist decompõe o [PRD da landing page Mipo](../.docs/prd.md). Consulte
 
 ## Fase 2 — Base da página e contato
 
-- [ ] **T004 — Remover o conteúdo de demonstração do Vite e preparar a estrutura da página** (PRD: §2, §10, REQ-001, SYS-001, SYS-007). Atualizar `src/main.ts` e os arquivos necessários para estabelecer a landing page em HTML semântico, com âncoras para as seções previstas.
+- [x] **T004 — Remover o conteúdo de demonstração do Vite e preparar a estrutura da página** (PRD: §2, §10, REQ-001, SYS-001, SYS-007). Atualizar `src/main.ts` e os arquivos necessários para estabelecer a landing page em HTML semântico, com âncoras para as seções previstas.
   **Aprovação:** o site não exibe logos, contador, instruções ou qualquer outro conteúdo de demonstração do Vite; o conteúdo público é renderizado pelo site estático e as âncoras das seções apontam para destinos existentes.
 
-- [ ] **T005 — Criar a base visual responsiva** (PRD: §11, SYS-003, SYS-004, SYS-005). Definir tokens CSS e estilos globais em `src/style.css`, aplicando somente a direção visual aprovada em T002.
+- [x] **T005 — Criar a base visual responsiva** (PRD: §11, SYS-003, SYS-004, SYS-005). Definir tokens CSS e estilos globais em `src/style.css`, aplicando somente a direção visual aprovada em T002.
   **Aprovação:** cores, tipografia, espaçamento e estados de foco têm regras consistentes; a base se adapta a celular, tablet e desktop, sem introduzir dependências de UI ou CSS não aprovadas.
 
-- [ ] **T006 — Implementar o contato compartilhado pelo WhatsApp** (PRD: REQ-002, REQ-003, SYS-009; §10). Preparar o link oficial `https://wa.me/5547997628214`, codificar a mensagem pré-preenchida e manter número/alternativa de contato visíveis como texto acessível.
+- [x] **T006 — Implementar o contato compartilhado pelo WhatsApp** (PRD: REQ-002, REQ-003, SYS-009; §10). Preparar o link oficial `https://wa.me/5547997628214`, codificar a mensagem pré-preenchida e manter número/alternativa de contato visíveis como texto acessível.
   **Aprovação:** todos os CTAs usam o número correto e uma mensagem pré-preenchida; o link não contém espaços ou pontuação no número, e o número continua legível e selecionável mesmo quando o WhatsApp não abre.
 
 ## Fase 3 — Conteúdo e jornadas

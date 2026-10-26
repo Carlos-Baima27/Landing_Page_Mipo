@@ -1,60 +1,47 @@
 import './style.css'
-import heroImg from './assets/hero.png'
-import typescriptLogo from './assets/typescript.svg'
-import viteLogo from './assets/vite.svg'
-import { setupCounter } from './counter.ts'
+
+const whatsappMessage = encodeURIComponent('Olá! Gostaria de cotar uma entrega com a Mipo.')
+const whatsappUrl = `https://wa.me/5547997628214?text=${whatsappMessage}`
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-<section id="center">
-  <div class="hero">
-    <img src="${heroImg}" class="base" width="170" height="179">
-    <img src="${typescriptLogo}" class="framework" alt="TypeScript logo"/>
-    <img src="${viteLogo}" class="vite" alt="Vite logo" />
-  </div>
-  <div>
-    <h1>Get started</h1>
-    <p>Edit <code>src/main.ts</code> and save to test <code>HMR</code></p>
-  </div>
-  <button id="counter" type="button" class="counter"></button>
-</section>
+  <header class="site-header">
+    <a class="site-brand" href="#inicio">Mipo Express</a>
+    <nav aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#cobertura">Cobertura</a>
+      <a href="#faq">Perguntas frequentes</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-<div class="ticks"></div>
+  <main>
+    <section id="inicio" aria-labelledby="titulo-principal">
+      <p>Entregas expressas em Balneário Camboriú e região.</p>
+      <h1 id="titulo-principal">Conte com a Mipo para suas entregas</h1>
+      <p>Serviço de motoboy para pessoas e empresas.</p>
+      <a href="${whatsappUrl}">Pedir motoboy pelo WhatsApp</a>
+    </section>
 
-<section id="next-steps">
-  <div id="docs">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
-    <h2>Documentation</h2>
-    <p>Your questions, answered</p>
-    <ul>
-      <li>
-        <a href="https://vite.dev/" target="_blank">
-          <img class="logo" src="${viteLogo}" alt="" />
-          Explore Vite
-        </a>
-      </li>
-      <li>
-        <a href="https://www.typescriptlang.org" target="_blank">
-          <img class="button-icon" src="${typescriptLogo}" alt="">
-          Learn more
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div id="social">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#social-icon"></use></svg>
-    <h2>Connect with us</h2>
-    <p>Join the Vite community</p>
-    <ul>
-      <li><a href="https://github.com/vitejs/vite" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#github-icon"></use></svg>GitHub</a></li>
-      <li><a href="https://chat.vite.dev/" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#discord-icon"></use></svg>Discord</a></li>
-      <li><a href="https://x.com/vite_js" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#x-icon"></use></svg>X.com</a></li>
-      <li><a href="https://bsky.app/profile/vite.dev" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#bluesky-icon"></use></svg>Bluesky</a></li>
-    </ul>
-  </div>
-</section>
+    <section id="servicos" aria-labelledby="titulo-servicos">
+      <h2 id="titulo-servicos">Serviços</h2>
+      <p>Entregas para pessoas e empresas em Balneário Camboriú e Camboriú.</p>
+    </section>
 
-<div class="ticks"></div>
-<section id="spacer"></section>
+    <section id="cobertura" aria-labelledby="titulo-cobertura">
+      <h2 id="titulo-cobertura">Área de cobertura</h2>
+      <p>Balneário Camboriú e Camboriú, Santa Catarina.</p>
+    </section>
+
+    <section id="faq" aria-labelledby="titulo-faq">
+      <h2 id="titulo-faq">Perguntas frequentes</h2>
+      <p>Fale com a Mipo para tirar dúvidas sobre as entregas.</p>
+    </section>
+
+    <section id="contato" aria-labelledby="titulo-contato">
+      <h2 id="titulo-contato">Entre em contato</h2>
+      <p>Consulte a Mipo sobre sua necessidade de entrega pelo WhatsApp.</p>
+      <p>Se o WhatsApp não abrir, o número de contato é <span>+55 47 99762-8214</span>.</p>
+      <a href="${whatsappUrl}">Conversar com a Mipo pelo WhatsApp</a>
+    </section>
+  </main>
 `
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
