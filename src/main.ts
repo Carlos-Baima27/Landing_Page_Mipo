@@ -1,11 +1,15 @@
 import './style.css'
+import companyImage from './assets/empresa.jpg'
+import companyLogo from './assets/logomipo.jpg'
 
 const whatsappMessage = encodeURIComponent('Olá! Gostaria de cotar uma entrega com a Mipo.')
 const whatsappUrl = `https://wa.me/5547997628214?text=${whatsappMessage}`
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header class="site-header">
-    <a class="site-brand" href="#inicio">Mipo Express</a>
+    <a class="site-brand" href="#inicio" aria-label="Mipo Express - início">
+      <img src="${companyLogo}" alt="Mipo Express" />
+    </a>
     <nav aria-label="Navegação principal">
       <a href="#servicos">Serviços</a>
       <a href="#cobertura">Cobertura</a>
@@ -23,13 +27,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <a href="${whatsappUrl}">Pedir motoboy pelo WhatsApp</a>
       </div>
       <figure class="hero-illustration">
-        <div class="illustration-art" aria-hidden="true">
-          <span class="illustration-route"></span>
-          <span class="illustration-package"></span>
-          <span class="illustration-dot illustration-dot-one"></span>
-          <span class="illustration-dot illustration-dot-two"></span>
-        </div>
-        <figcaption>Ilustração conceitual de uma encomenda; não representa a frota ou a equipe da Mipo.</figcaption>
+        <img
+          src="${companyImage}"
+          alt="Arte promocional da Mipo Express com uma motocicleta de entrega e um baú."
+        />
+        <figcaption>Imagem promocional fornecida pela Mipo Express.</figcaption>
       </figure>
     </section>
 
@@ -119,7 +121,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <footer class="site-footer" aria-labelledby="titulo-rodape">
     <div class="footer-details">
       <div>
-        <h2 id="titulo-rodape">Mipo Express</h2>
+        <h2 id="titulo-rodape" class="footer-brand">
+          <img src="${companyLogo}" alt="Mipo Express" />
+        </h2>
         <address>R. 1950, 321 - Centro, Balneário Camboriú - SC</address>
       </div>
       <div>

@@ -72,10 +72,20 @@ button:focus-visible {
 }
 
 .site-brand {
+  display: flex;
+  width: 5rem;
+  min-width: 5rem;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
   color: var(--color-text);
-  font-size: 1.25rem;
-  font-weight: 800;
   text-decoration: none;
+}
+
+.site-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .site-header nav {
@@ -136,69 +146,17 @@ main > section + section {
 }
 
 .hero-illustration {
+  width: min(100%, 26rem);
   margin: 0;
+  justify-self: end;
 }
 
-.illustration-art {
-  position: relative;
-  display: grid;
-  min-height: 18rem;
-  place-items: center;
-  overflow: hidden;
-  border-radius: 50% 42% 48% 38%;
-  background: var(--color-surface);
-}
-
-.illustration-package {
-  position: relative;
-  z-index: 1;
-  width: 8rem;
-  height: 7rem;
-  transform: rotate(-8deg);
-  border: 3px solid var(--color-text);
-  border-radius: 0.5rem;
-  background: var(--color-action);
-  box-shadow: 0.8rem 0.8rem 0 var(--color-text);
-}
-
-.illustration-package::before {
-  position: absolute;
-  top: -3px;
-  left: 50%;
-  width: 2.5rem;
-  height: 100%;
-  transform: translateX(-50%);
-  border-inline: 3px solid var(--color-text);
-  background: var(--color-background);
-  content: '';
-}
-
-.illustration-route {
-  position: absolute;
-  width: 70%;
-  height: 60%;
-  transform: rotate(-20deg);
-  border: 2px dashed #8a3a0d;
-  border-color: #8a3a0d transparent transparent;
-  border-radius: 50%;
-}
-
-.illustration-dot {
-  position: absolute;
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-  background: var(--color-action);
-}
-
-.illustration-dot-one {
-  top: 25%;
-  left: 24%;
-}
-
-.illustration-dot-two {
-  right: 20%;
-  bottom: 24%;
+.hero-illustration img {
+  width: 100%;
+  max-height: min(70vh, 38rem);
+  object-fit: contain;
+  margin-inline: auto;
+  border-radius: var(--radius-card);
 }
 
 .hero-illustration figcaption {
@@ -433,6 +391,12 @@ p {
   font-size: 1.25rem;
 }
 
+.footer-brand img {
+  width: 6.5rem;
+  max-height: 6.5rem;
+  object-fit: contain;
+}
+
 .footer-details p,
 .footer-details address {
   margin: 0 0 0.5rem;
@@ -476,7 +440,8 @@ p {
   }
 
   .hero-illustration {
-    max-width: 28rem;
+    width: min(100%, 24rem);
+    justify-self: center;
   }
 
   .service-grid,
