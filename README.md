@@ -1,6 +1,6 @@
 # Landing Page Mipo Express
 
-Landing page institucional da Mipo Express, com informações sobre serviços, área de atendimento e contato pelo WhatsApp. O projeto usa Vite e TypeScript e é publicado como site estático no GitHub Pages.
+Landing page institucional da Mipo Express, com informações sobre serviços, área de atendimento e contato pelo WhatsApp. O projeto usa Vite e TypeScript e pode ser publicado como site estático na Vercel ou no GitHub Pages.
 
 ## Tecnologias
 
@@ -43,7 +43,18 @@ O site compilado fica no diretório `dist`. Para visualizar o build localmente:
 npm run preview
 ```
 
-## Publicação no GitHub Pages
+## Publicação na Vercel
+
+Importe o repositório no painel da Vercel. A configuração detectada pelo projeto é:
+
+- Framework preset: **Vite**
+- Build command: `npm run build`
+- Output directory: `dist`
+- Install command: `npm install`
+
+O caminho-base da Vercel é `/`, então o site e os arquivos estáticos são servidos na raiz do domínio.
+
+## Publicação no GitHub Pages (opcional)
 
 O workflow em `.github/workflows/deploy.yml` executa o build e publica o diretório `dist` quando há um push para a branch `main`. Também é possível iniciar a publicação manualmente pela aba **Actions** do GitHub.
 
@@ -53,8 +64,8 @@ No repositório, configure:
 2. Em **Build and deployment → Source**, selecione **GitHub Actions**.
 3. Envie as alterações para a branch `main` ou execute manualmente o workflow **Deploy to GitHub Pages**.
 
-O endereço público esperado é:
+O caminho-base `/Landing_Page_Mipo/` é usado somente no workflow do GitHub Actions, para que os arquivos do site funcionem no endereço de projeto do GitHub Pages. Nos demais builds, incluindo a Vercel, o caminho-base é `/`.
+
+O endereço do GitHub Pages, se estiver habilitado, é:
 
 <https://carlos-baima27.github.io/Landing_Page_Mipo/>
-
-O caminho base `/Landing_Page_Mipo/` está configurado em `vite.config.ts` para que os arquivos do site funcionem no endereço de projeto do GitHub Pages.

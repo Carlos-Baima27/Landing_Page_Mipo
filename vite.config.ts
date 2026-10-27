@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/Landing_Page_Mipo/',
+  base: process.env.GITHUB_ACTIONS === 'true' ? '/Landing_Page_Mipo/' : '/',
 })
