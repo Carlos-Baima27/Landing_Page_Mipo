@@ -32,7 +32,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <p>Entregas expressas em Balneário Camboriú e Camboriú.</p>
         <h1 id="titulo-principal">Sua entrega, com a agilidade da Mipo</h1>
         <p>Motoboy para entregas do dia a dia, com atendimento para pessoas e empresas.</p>
-        <a href="${whatsappUrl}">
+        <a class="whatsapp-cta" href="${whatsappUrl}">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.3A8.4 8.4 0 1 1 21 11.5Z" />
             <path d="M9 9a.8.8 0 0 0-1.2.5c-.3 1 .5 2.4 1.7 3.6s2.6 2 3.6 1.7a.8.8 0 0 0 .5-1.2l-.7-.9a.8.8 0 0 0-1-.2l-.5.3a7 7 0 0 1-1.6-1.6l.3-.5a.8.8 0 0 0-.2-1L9 9Z" />
@@ -189,7 +189,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <h2 id="titulo-contato">Entre em contato</h2>
       <p>Consulte a Mipo sobre sua necessidade de entrega pelo WhatsApp.</p>
       <p>Se o WhatsApp não abrir, o número de contato é <span>+55 47 99762-8214</span>.</p>
-      <a class="contact-cta" href="${whatsappUrl}">
+      <a class="contact-cta whatsapp-cta" href="${whatsappUrl}">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.3A8.4 8.4 0 1 1 21 11.5Z" />
           <path d="M9 9a.8.8 0 0 0-1.2.5c-.3 1 .5 2.4 1.7 3.6s2.6 2 3.6 1.7a.8.8 0 0 0 .5-1.2l-.7-.9a.8.8 0 0 0-1-.2l-.5.3a7 7 0 0 1-1.6-1.6l.3-.5a.8.8 0 0 0-.2-1L9 9Z" />

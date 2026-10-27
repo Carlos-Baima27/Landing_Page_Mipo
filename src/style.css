@@ -250,6 +250,30 @@ p {
   box-shadow: none;
 }
 
+.whatsapp-cta {
+  position: relative;
+}
+
+.whatsapp-cta::after {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 rgb(242 106 33 / 45%);
+  content: '';
+  pointer-events: none;
+  animation: whatsapp-pulse 2s ease-out 2;
+}
+
+@keyframes whatsapp-pulse {
+  70% {
+    box-shadow: 0 0 0 0.75rem rgb(242 106 33 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(242 106 33 / 0%);
+  }
+}
+
 #servicos,
 #faq {
   background: var(--color-surface);
@@ -585,5 +609,9 @@ p {
 
   a {
     transition: none;
+  }
+
+  .whatsapp-cta::after {
+    animation: none;
   }
 }
