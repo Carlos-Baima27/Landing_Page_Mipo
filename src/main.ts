@@ -1,6 +1,6 @@
 import './style.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import companyImage from './assets/empresa.jpg'
+import companyImage from './assets/empresa.png'
 import companyLogo from './assets/logomipo.jpg'
 
 const whatsappMessage = encodeURIComponent('Olá! Gostaria de saber o preço de uma entrega com o Mipo.')
