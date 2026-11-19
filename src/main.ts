@@ -1,6 +1,6 @@
 import './style.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import companyImage from './assets/empresa.png'
+import companyImage from './assets/empresa.jpg'
 import companyLogo from './assets/logomipo.jpg'
 
 const whatsappMessage = encodeURIComponent('Olá! Gostaria de saber o preço de uma entrega com o Mipo.')
@@ -38,7 +38,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <figure class="hero-illustration">
         <img
           src="${companyImage}"
-          alt="Arte promocional do Mipo Express com uma motocicleta de entrega e um baú."
+          alt="Arte promocional do Mipo Express com motocicleta de entrega, baú e informações sobre entregas no litoral catarinense."
         />
       </figure>
     </section>
