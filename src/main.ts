@@ -27,7 +27,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <main>
     <section id="inicio" aria-labelledby="titulo-principal">
       <div class="hero-copy">
-        <p>Entregas expressas em Balneário Camboriú e Camboriú.</p>
+        <p>Entregas expressas em Balneário Camboriú e Região.</p>
         <h1 id="titulo-principal">Sua entrega, com a agilidade do Mipo</h1>
         <p>Motoboy para entregas do dia a dia, com atendimento para pessoas e empresas.</p>
         <a class="whatsapp-cta" href="${whatsappUrl}">
@@ -85,7 +85,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </li>
           <li>
             <i class="bi bi-geo-alt icon benefit-icon" aria-hidden="true"></i>
-            <span><strong>Atendimento regional</strong> em Balneário Camboriú e Camboriú.</span>
+            <span><strong>Atendimento regional</strong> em Balneário Camboriú e Região.</span>
           </li>
         </ul>
       </div>
@@ -93,14 +93,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <section id="cobertura" aria-labelledby="titulo-cobertura">
       <h2 id="titulo-cobertura">Cobertura e atendimento</h2>
-      <p>Atendimento confirmado em Balneário Camboriú e Camboriú, Santa Catarina.</p>
+      <p>Atendimento confirmado em Balneário Camboriú e Região, Santa Catarina.</p>
       <dl class="operations-grid">
         <div>
           <dt>
             <i class="bi bi-geo-alt icon detail-icon" aria-hidden="true"></i>
             Cidades atendidas
           </dt>
-          <dd>Balneário Camboriú e Camboriú</dd>
+          <dd>Balneário Camboriú e Região</dd>
         </div>
         <div>
           <dt>
@@ -141,7 +141,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </details>
         <details>
           <summary>Quais cidades são atendidas?</summary>
-          <p>A cobertura confirmada é Balneário Camboriú e Camboriú, em Santa Catarina.</p>
+          <p>A cobertura confirmada é Balneário Camboriú e Região, em Santa Catarina.</p>
         </details>
         <details>
           <summary>Quais formas de pagamento são aceitas?</summary>
