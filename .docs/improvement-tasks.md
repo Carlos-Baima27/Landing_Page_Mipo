@@ -10,8 +10,19 @@ Lista de próximas etapas baseada na revisão do PRD e da implementação atual.
 
 ## Fase 1 — Confirmar informações comerciais
 
-- [ ] **M001 — Confirmar horário, cobertura e alegações comerciais** (PRD: §6, §9, §13 e SYS-007). Validar com a Mipo o horário de atendimento, as cidades atendidas e o texto permitido sobre agilidade e segurança. Resolver especialmente a divergência entre 07h–00h no PRD e “24 horas” no site, e entre as cidades confirmadas e a expressão “e Região”.
+- [x] **M001 — Confirmar horário, cobertura e alegações comerciais** (PRD: §6, §9, §13 e SYS-007). Validar com a Mipo o horário de atendimento, as cidades atendidas e o texto permitido sobre agilidade e segurança. Resolver especialmente a divergência entre 07h–00h no PRD e “24 horas” no site, e entre as cidades confirmadas e a expressão “e Região”.
   **Aprovação:** há confirmação registrada para cada informação; nenhuma dúvida é resolvida por suposição.
+
+### Confirmação registrada — M001
+
+- **Data da confirmação:** 22/11/2026
+- **Fonte:** Confirmação direta da Mipo pelo WhatsApp
+- **Horário:** Todos os dias, 24h
+- **Cobertura pública:** Balneário Camboriú e região
+- **Alegação aprovada sobre agilidade:** Agilidade na entrega
+- **Alegação aprovada sobre segurança:** Cuidado e segurança no manuseio e na entrega
+- **Telefone oficial:** +55 47 99762-8214
+- **Endereço publicado:** R. 1950, 321 - Centro, Balneário Camboriú - SC, 88330-470
 
 ## Fase 2 — Alinhar conteúdo e documentação
 
