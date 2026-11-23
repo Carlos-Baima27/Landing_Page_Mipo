@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run check:content && tsc && vite build",
+    "check:content": "node scripts/check-commercial-data.mjs",
     "preview": "vite preview"
   },
   "devDependencies": {

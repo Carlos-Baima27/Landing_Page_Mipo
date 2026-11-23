@@ -1,9 +1,9 @@
 # PRD — Landing Page Mipo
 
-**Status:** Rascunho para validação  
-**Data:** 25/10/2026  
+**Status:** Implementado; pendências comerciais resolvidas na Fase 1  
+**Data:** 22/11/2026  
 **Produto:** Página institucional e de conversão da Mipo Express
-**Mercado inicial:** Balneário Camboriú e Camboriú, Santa Catarina
+**Mercado inicial:** Balneário Camboriú e região, Santa Catarina
 
 ## 1. Resumo do produto
 
@@ -13,15 +13,15 @@ O caminho principal deve ser direto: entender o serviço e a cobertura, tocar em
 
 ## 2. Contexto e estado atual
 
-O material de descoberta descreve a proposta comercial, o público, as seções desejadas e alguns dados operacionais. A inspeção do workspace mostra que o site ainda não foi implementado: o código atual é o scaffold padrão do Vite, com conteúdo de demonstração e sem funcionalidades da Mipo.
+O material de descoberta descreve a proposta comercial, o público, as seções desejadas e os dados operacionais confirmados. A landing page já está implementada como site estático em Vite e TypeScript.
 
 ### Fatos observados no workspace
 
-- O projeto usa Vite e TypeScript; a interface inicial é gerada em `src/main.ts` e estilizada em `src/style.css`.
+- O projeto usa Vite e TypeScript; a interface é gerada em `src/main.ts` e estilizada em `src/style.css`.
 - O comando de build configurado executa `tsc` e, em seguida, `vite build`.
 - Tailwind CSS não está listado nas dependências atuais. A escolha de usar CSS simples ou adicionar Tailwind não está tomada; este PRD considera CSS simples como a opção inicial, sem introduzir uma dependência não necessária.
-- `index.html` ainda tem idioma `en`, título “pagemipo” e metadados padrão/incompletos para o negócio.
-- As imagens e ícones existentes são recursos do scaffold e não constituem identidade visual ou fotografia da Mipo.
+- `index.html` usa idioma `pt-BR`, título próprio e metadados próprios da Mipo.
+- Os recursos visuais existentes são placeholders/ilustrações aprovadas provisoriamente e não constituem fotografias da equipe ou da frota real.
 
 ## 3. Objetivos
 
@@ -79,10 +79,10 @@ Pessoas que precisam enviar ou retirar documentos, chaves ou encomendas na regi�
 | ----------------------------------- | --------------------------------------------------------- |
 | Nome do negócio                     | Mipo                                                      |
 | WhatsApp de atendimento             | +55 47 99762-8214                                         |
-| Horário                             | Todos os dias, das 07h às 00h                             |
+| Horário                             | Todos os dias, 24h                                        |
 | Formas de pagamento                 | Dinheiro, Pix e Cartão                                    |
-| Endereço informado                  | R. 1950, 321 - Centro, Balneário Camboriú - SC            |
-| Cidades confirmadas para divulgação | Balneário Camboriú e Camboriú                             |
+| Endereço informado                  | R. 1950, 321 - Centro, Balneário Camboriú - SC, 88330-470 |
+| Cobertura pública confirmada        | Balneário Camboriú e região                               |
 | Outras cidades                      | Não divulgar até confirmação                              |
 | Fotos reais                         | Serão fornecidas posteriormente; usar placeholders até lá |
 | Depoimentos e métricas              | Omitir até existirem conteúdos verificáveis e autorizados |
@@ -122,9 +122,9 @@ Pessoas que precisam enviar ou retirar documentos, chaves ou encomendas na regi�
 - **REQ-002 — Contato por WhatsApp:** os CTAs de contato devem apontar para o número `+55 47 99762-8214` e abrir uma mensagem pré-preenchida, por exemplo: “Olá! Gostaria de saber o preço de uma entrega com a Mipo.”
 - **REQ-003 — CTA consistente:** o CTA principal deve ser visível na primeira dobra em telas comuns e deve haver acesso ao contato após as seções de serviços e informações finais.
 - **REQ-004 — Serviços:** a página deve apresentar entregas expressas avulsas, contratos fixos/mensais para empresas e coleta/entrega de documentos ou encomendas.
-- **REQ-005 — Diferenciais:** a página deve explicar agilidade no atendimento, segurança no manuseio/entrega e cobertura regional, sem afirmar tempos, garantias ou resultados não confirmados.
-- **REQ-006 — Área de cobertura:** a página deve listar Balneário Camboriú e Camboriú como cidades confirmadas. Outras localidades só podem ser incluídas após confirmação da Mipo.
-- **REQ-007 — Informações operacionais:** a página deve informar atendimento todos os dias, das 07h às 00h, e pagamento em dinheiro, Pix ou Cartão.
+- **REQ-005 — Diferenciais:** a página deve explicar agilidade na entrega, cuidado e segurança no manuseio e na entrega e cobertura regional, sem afirmar tempos, garantias ou resultados não confirmados.
+- **REQ-006 — Área de cobertura:** a página deve apresentar Balneário Camboriú e região como cobertura confirmada. Outras localidades só podem ser incluídas após confirmação da Mipo.
+- **REQ-007 — Informações operacionais:** a página deve informar atendimento todos os dias, 24h, e pagamento em dinheiro, Pix ou Cartão.
 - **REQ-008 — FAQ:** a página deve responder, no mínimo, como solicitar uma entrega, quais cidades estão confirmadas e quais formas de pagamento são aceitas. Dúvidas sem resposta confirmada devem direcionar a pessoa ao WhatsApp, sem inventar políticas.
 - **REQ-009 — Contato e localização:** o rodapé deve apresentar o endereço informado, o horário e um link para o WhatsApp. Endereço e dados de contato devem ser texto selecionável, não parte de uma imagem.
 - **REQ-010 — Prova social:** depoimentos, avaliações, números de entregas e tempos médios não devem ser exibidos enquanto não forem fornecidos, verificados e autorizados.
@@ -141,7 +141,7 @@ Pessoas que precisam enviar ou retirar documentos, chaves ou encomendas na regi�
 - **SYS-005 — Desempenho:** evitar dependências e imagens desnecessariamente pesadas. Como objetivo inicial, buscar LCP ≤ 2,5 s, INP ≤ 200 ms e CLS ≤ 0,1 em condições representativas; reavaliar com dados reais de uso quando houver tráfego.
 - **SYS-006 — Privacidade:** não coletar nem persistir informações de entrega na landing page. A pessoa decide o que enviar diretamente pelo WhatsApp.
 - **SYS-007 — Integridade do conteúdo:** dados comerciais, cobertura e alegações devem corresponder às informações aprovadas pela Mipo. Não usar conteúdo demonstrativo do scaffold em produção.
-- **SYS-008 — SEO local:** usar idioma `pt-BR`, título e descrição próprios, conteúdo textual rastreável e referências naturais a Balneário Camboriú e Camboriú. Não criar páginas ou marcações de localidade para cidades não confirmadas.
+- **SYS-008 — SEO local:** usar idioma `pt-BR`, título e descrição próprios, conteúdo textual rastreável e referências naturais a Balneário Camboriú e região. Não criar páginas ou marcações de localidade para cidades não confirmadas.
 - **SYS-009 — Falhas de integração:** se o WhatsApp não puder ser aberto pelo navegador, o número e uma alternativa copiável/visível devem continuar acessíveis na página.
 
 ## 10. Diretrizes técnicas
@@ -154,7 +154,7 @@ Pessoas que precisam enviar ou retirar documentos, chaves ou encomendas na regi�
 - Evitar backend, banco de dados, bibliotecas de UI ou dependências de formulário, pois o escopo inicial é uma página estática cujo contato acontece no WhatsApp.
 - Substituir os elementos de demonstração do Vite (título, logos, contador e conteúdo de documentação) antes de publicar.
 - Atualizar o título, idioma, descrição, favicon e metadados do `index.html`. O favicon/ícone final depende da identidade aprovada.
-- Hospedagem estática escolhida: Vercel. Para este projeto Vite, usar `npm run build` como comando de build e `dist` como diretório de saída; não há configuração `vite.config.*` personalizada no workspace.
+- Hospedagem estática oficial: Vercel. Para este projeto Vite, usar `npm run build` como comando de build e `dist` como diretório de saída. GitHub Pages continua como alternativa suportada pelo workflow existente, mas não substitui a plataforma oficial.
 
 ### Link de contato
 
@@ -197,7 +197,7 @@ A direção e a paleta abaixo foram aprovadas para orientar a landing page. Isso
 2. Hero com proposta de valor e CTA para WhatsApp.
 3. Diferenciais: agilidade, cuidado/segurança e atendimento regional.
 4. Serviços: entrega avulsa, contrato recorrente e coleta/entrega.
-5. Cobertura confirmada: Balneário Camboriú e Camboriú.
+5. Cobertura confirmada: Balneário Camboriú e região.
 6. FAQ: solicitação, cidades atendidas e pagamentos.
 7. Contato final com CTA.
 8. Rodapé com endereço, horário, pagamentos e links oficiais confirmados.
@@ -209,8 +209,8 @@ Não incluir seção de depoimentos ou métricas até que conteúdo verificável
 - [ ] O site apresenta a Mipo como serviço de motoboy/entrega expressa, não como o template Vite.
 - [ ] O CTA principal abre o WhatsApp `+55 47 99762-8214` com mensagem de cotação preenchida.
 - [ ] As modalidades avulsa e recorrente são distintas e compreensíveis.
-- [ ] Balneário Camboriú e Camboriú são as únicas cidades apresentadas como confirmadas.
-- [ ] Horário (todos os dias, 07h–00h), dinheiro, Pix e Cartão aparecem sem divergência entre seções.
+- [ ] Balneário Camboriú e região são apresentados como a cobertura confirmada.
+- [ ] Horário (todos os dias, 24h), dinheiro, Pix e Cartão aparecem sem divergência entre seções.
 - [ ] Endereço exibido corresponde a R. 1950, 321 - Centro, Balneário Camboriú - SC.
 - [ ] Não existem depoimentos, métricas, avaliações ou imagens que aparentem ser reais sem validação.
 - [ ] A página funciona em telas de 320 px ou maiores, sem conteúdo essencial cortado ou rolagem horizontal.

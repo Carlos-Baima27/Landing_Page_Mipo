@@ -3,6 +3,15 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import companyImage from './assets/empresa.jpg'
 import companyLogo from './assets/logomipo.jpg'
 
+const commercialContent = {
+  coverage: 'Balneário Camboriú e região',
+  hours: 'Todos os dias, 24h',
+  agility: 'Agilidade na entrega',
+  safety: 'Cuidado e segurança no manuseio e na entrega',
+  phoneDisplay: '+55 47 99762-8214',
+  address: 'R. 1950, 321 - Centro, Balneário Camboriú - SC, 88330-470',
+} as const
+
 const whatsappMessage = encodeURIComponent('Olá! Gostaria de saber o preço de uma entrega com o Mipo.')
 const whatsappUrl = `https://wa.me/5547997628214?text=${whatsappMessage}`
 const googleMapsUrl = 'https://www.google.com/maps/place/Mipo+Express/@-26.992972,-48.6320208,17z/data=!3m1!4b1!4m6!3m5!1s0x94d8b79f56f3262b:0x423564aaae90b84b!8m2!3d-26.992972!4d-48.6320208!16s%2Fg%2F11xzqwt14g'
@@ -27,8 +36,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <main>
     <section id="inicio" aria-labelledby="titulo-principal">
       <div class="hero-copy">
-        <p>Entregas expressas em Balneário Camboriú e Região.</p>
-        <h1 id="titulo-principal">Sua entrega, com a agilidade do Mipo</h1>
+        <p>Entregas expressas em ${commercialContent.coverage}.</p>
+        <h1 id="titulo-principal">Sua entrega, com ${commercialContent.agility.toLowerCase()} pelo Mipo</h1>
         <p>Motoboy para entregas do dia a dia, com atendimento para pessoas e empresas.</p>
         <a class="whatsapp-cta" href="${whatsappUrl}">
           <i class="bi bi-whatsapp icon" aria-hidden="true"></i>
@@ -77,15 +86,15 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <ul>
           <li>
             <i class="bi bi-clock-history icon benefit-icon" aria-hidden="true"></i>
-            <span><strong>Agilidade no atendimento</strong> para entender sua necessidade.</span>
+            <span><strong>${commercialContent.agility}</strong> em cada pedido.</span>
           </li>
           <li>
             <i class="bi bi-shield-check icon benefit-icon" aria-hidden="true"></i>
-            <span><strong>Cuidado e segurança</strong> no manuseio e na entrega.</span>
+            <span><strong>${commercialContent.safety}</strong>.</span>
           </li>
           <li>
             <i class="bi bi-geo-alt icon benefit-icon" aria-hidden="true"></i>
-            <span><strong>Atendimento regional</strong> em Balneário Camboriú e Região.</span>
+            <span><strong>Atendimento regional</strong> em ${commercialContent.coverage}.</span>
           </li>
         </ul>
       </div>
@@ -93,21 +102,21 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <section id="cobertura" aria-labelledby="titulo-cobertura">
       <h2 id="titulo-cobertura">Cobertura e atendimento</h2>
-      <p>Atendimento confirmado em Balneário Camboriú e Região, Santa Catarina.</p>
+      <p>Atendimento confirmado em ${commercialContent.coverage}, Santa Catarina.</p>
       <dl class="operations-grid">
         <div>
           <dt>
             <i class="bi bi-geo-alt icon detail-icon" aria-hidden="true"></i>
             Cidades atendidas
           </dt>
-          <dd>Balneário Camboriú e Região</dd>
+          <dd>${commercialContent.coverage}</dd>
         </div>
         <div>
           <dt>
             <i class="bi bi-clock icon detail-icon" aria-hidden="true"></i>
             Horário
           </dt>
-          <dd>Atendimento 24 horas, todos os dias</dd>
+          <dd>${commercialContent.hours}</dd>
         </div>
         <div>
           <dt>
@@ -122,7 +131,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             Endereço
           </dt>
           <dd>
-            R. 1950, 321 - Centro, Balneário Camboriú - SC, 88330-470<br />
+            ${commercialContent.address}<br />
             <a class="map-link" href="${googleMapsUrl}" target="_blank" rel="noopener noreferrer">
               Ver no Google Maps
               <i class="bi bi-box-arrow-up-right icon external-icon" aria-hidden="true"></i>
@@ -141,7 +150,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </details>
         <details>
           <summary>Quais cidades são atendidas?</summary>
-          <p>A cobertura confirmada é Balneário Camboriú e Região, em Santa Catarina.</p>
+          <p>A cobertura confirmada é ${commercialContent.coverage}, em Santa Catarina.</p>
         </details>
         <details>
           <summary>Quais formas de pagamento são aceitas?</summary>
@@ -157,7 +166,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <section id="contato" aria-labelledby="titulo-contato">
       <h2 id="titulo-contato">Entre em contato</h2>
       <p>Consulte o Mipo sobre sua necessidade de entrega pelo WhatsApp.</p>
-      <p>Se o WhatsApp não abrir, o número de contato é <span>+55 47 99762-8214</span>.</p>
+      <p>Se o WhatsApp não abrir, o número de contato é <span>${commercialContent.phoneDisplay}</span>.</p>
       <a class="contact-cta whatsapp-cta" href="${whatsappUrl}">
         <i class="bi bi-whatsapp icon" aria-hidden="true"></i>
         Conversar com o Mipo pelo WhatsApp
@@ -171,14 +180,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <h2 id="titulo-rodape" class="footer-brand">
           <img src="${companyLogo}" alt="O Mipo Express" />
         </h2>
-        <address>R. 1950, 321 - Centro, Balneário Camboriú - SC, 88330-470</address>
+        <address>${commercialContent.address}</address>
       </div>
       <div>
         <h3>
           <i class="bi bi-clock icon footer-icon" aria-hidden="true"></i>
           Atendimento
         </h3>
-        <p>24 horas, todos os dias</p>
+        <p>${commercialContent.hours}</p>
       </div>
       <div>
         <h3>
@@ -195,7 +204,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             Fale com o Mipo
           </a>
         </p>
-        <p>Número: <span>+55 47 99762-8214</span></p>
+        <p>Número: <span>${commercialContent.phoneDisplay}</span></p>
         <p>
           <a class="footer-link-with-icon" href="${instagramUrl}" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-instagram icon social-icon" aria-hidden="true"></i>

@@ -46,7 +46,7 @@ Este checklist decompõe o [PRD da landing page Mipo](../.docs/prd.md). Consulte
 
 - [x] **T010 — Apresentar cobertura e informações operacionais** (PRD: §6, §7, REQ-006, REQ-007, SYS-007). Exibir as cidades confirmadas, horário, pagamentos e endereço somente em conformidade com as informações aprovadas.
   **Pré-requisito:** T001.
-  **Aprovação:** Balneário Camboriú e Camboriú são as únicas cidades apresentadas como confirmadas; horário e pagamentos coincidem com o PRD corrigido; o endereço, quando exibido, é “R. 1950, 321 - Centro, Balneário Camboriú - SC”.
+  **Aprovação:** a cobertura pública confirma “Balneário Camboriú e região”; horário e pagamentos coincidem com o PRD corrigido; o endereço, quando exibido, é “R. 1950, 321 - Centro, Balneário Camboriú - SC, 88330-470”.
 
 - [x] **T011 — Implementar o FAQ** (PRD: §7, §11, §12, REQ-008). Responder como solicitar uma entrega, quais cidades são atendidas e quais formas de pagamento são aceitas. Direcionar dúvidas sem resposta confirmada ao WhatsApp, sem criar políticas.
   **Pré-requisito:** T001 e T010.

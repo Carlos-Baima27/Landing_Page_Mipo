@@ -70,7 +70,7 @@ npm run preview
 
 ## Publicação
 
-### Vercel
+### Vercel — plataforma oficial
 
 Importe o repositório na Vercel. A configuração do projeto define:
 
@@ -96,4 +96,5 @@ No GitHub Pages, o caminho-base `/Landing_Page_Mipo/` é configurado automaticam
 - Edite textos, links e seções em [`src/main.ts`](./src/main.ts).
 - Atualize cores, espaçamentos e comportamento responsivo em [`src/style.css`](./src/style.css).
 - Atualize título, descrição e metadados de compartilhamento em [`index.html`](./index.html).
+- Os dados comerciais críticos podem ser validados com `npm run check:content`; o comando também é executado automaticamente antes do build.
 - Ao substituir imagens em `src/assets/`, confira e atualize os imports correspondentes em `src/main.ts`.

@@ -26,11 +26,11 @@ Lista de próximas etapas baseada na revisão do PRD e da implementação atual.
 
 ## Fase 2 — Alinhar conteúdo e documentação
 
-- [ ] **M002 — Sincronizar as informações públicas com os dados confirmados** (PRD: REQ-005 a REQ-009, SYS-007 e SYS-008). Atualizar a página, FAQ, rodapé, metadados e dados estruturados em `src/main.ts` e `index.html`. Reduzir a duplicação de informações comerciais ou adicionar uma verificação que detecte divergências entre esses locais.
+- [x] **M002 — Sincronizar as informações públicas com os dados confirmados** (PRD: REQ-005 a REQ-009, SYS-007 e SYS-008). Atualizar a página, FAQ, rodapé, metadados e dados estruturados em `src/main.ts` e `index.html`. Reduzir a duplicação de informações comerciais ou adicionar uma verificação que detecte divergências entre esses locais.
   **Pré-requisito:** M001.
   **Aprovação:** todas as ocorrências de horário, cobertura, telefone, endereço e alegações correspondem às confirmações; os dados estruturados não contradizem o conteúdo visível.
 
-- [ ] **M003 — Atualizar a documentação para o estado atual do projeto** (PRD: §2 e §10; README; `.docs/tasks.md`). Corrigir a descrição de scaffold não implementado, revisar o status do PRD e esclarecer qual plataforma de hospedagem é a oficial, mantendo documentação de plataformas alternativas somente se ainda forem suportadas.
+- [x] **M003 — Atualizar a documentação para o estado atual do projeto** (PRD: §2 e §10; README; `.docs/tasks.md`). Corrigir a descrição de scaffold não implementado, revisar o status do PRD e esclarecer qual plataforma de hospedagem é a oficial, mantendo documentação de plataformas alternativas somente se ainda forem suportadas.
   **Pré-requisito:** M001.
   **Aprovação:** PRD, tarefas e README descrevem de forma coerente o estado implementado e o processo de publicação vigente.
 
