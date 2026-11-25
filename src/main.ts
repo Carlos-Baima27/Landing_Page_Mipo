@@ -12,8 +12,13 @@ const commercialContent = {
   address: 'R. 1950, 321 - Centro, Balneário Camboriú - SC, 88330-470',
 } as const
 
-const whatsappMessage = encodeURIComponent('Olá! Gostaria de saber o preço de uma entrega com o Mipo.')
-const whatsappUrl = `https://wa.me/5547997628214?text=${whatsappMessage}`
+const createWhatsappUrl = (message: string) =>
+  `https://wa.me/5547997628214?text=${encodeURIComponent(message)}`
+
+const whatsappUrl = createWhatsappUrl('Olá! Gostaria de saber o preço de uma entrega com o Mipo.')
+const singleDeliveryWhatsappUrl = createWhatsappUrl('Olá! Gostaria de solicitar uma entrega avulsa.')
+const businessContractWhatsappUrl = createWhatsappUrl('Olá! Gostaria de conversar sobre um contrato de entregas para minha empresa.')
+const documentDeliveryWhatsappUrl = createWhatsappUrl('Olá! Gostaria de consultar uma coleta e entrega de documentos ou encomendas.')
 const googleMapsUrl = 'https://www.google.com/maps/place/Mipo+Express/@-26.992972,-48.6320208,17z/data=!3m1!4b1!4m6!3m5!1s0x94d8b79f56f3262b:0x423564aaae90b84b!8m2!3d-26.992972!4d-48.6320208!16s%2Fg%2F11xzqwt14g'
 const instagramUrl = 'https://www.instagram.com/mipo_express/'
 
@@ -62,7 +67,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             Entregas avulsas
           </h3>
           <p>Solicite uma entrega expressa quando precisar, para sua casa ou negócio.</p>
-          <a href="${whatsappUrl}">Consultar uma entrega</a>
+          <a href="${singleDeliveryWhatsappUrl}">Consultar uma entrega</a>
         </article>
         <article class="service-card">
           <h3>
@@ -70,7 +75,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             Contratos para empresas
           </h3>
           <p>Converse com o Mipo sobre uma solução fixa ou mensal para as entregas da sua empresa.</p>
-          <a href="${whatsappUrl}">Conversar sobre contrato</a>
+          <a href="${businessContractWhatsappUrl}">Conversar sobre contrato</a>
         </article>
         <article class="service-card">
           <h3>
@@ -78,7 +83,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             Documentos e encomendas
           </h3>
           <p>Coleta e entrega de documentos ou encomendas na área de cobertura confirmada.</p>
-          <a href="${whatsappUrl}">Consultar coleta e entrega</a>
+          <a href="${documentDeliveryWhatsappUrl}">Consultar coleta e entrega</a>
         </article>
       </div>
       <div class="benefits" aria-labelledby="titulo-diferenciais">

@@ -36,10 +36,10 @@ Lista de próximas etapas baseada na revisão do PRD e da implementação atual.
 
 ## Fase 3 — Melhorar o contato e validar a entrega
 
-- [ ] **M004 — Personalizar mensagens dos CTAs por tipo de serviço** (PRD: REQ-002 a REQ-004). Fazer os CTAs de entregas avulsas e contratos empresariais iniciarem mensagens adequadas ao contexto, mantendo o mesmo número oficial e o contato visível como alternativa.
+- [x] **M004 — Personalizar mensagens dos CTAs por tipo de serviço** (PRD: REQ-002 a REQ-004). Fazer os CTAs de entregas avulsas e contratos empresariais iniciarem mensagens adequadas ao contexto, mantendo o mesmo número oficial e o contato visível como alternativa.
   **Pré-requisito:** M001.
   **Aprovação:** cada CTA abre o número correto com a mensagem correspondente corretamente codificada; o número continua acessível como texto se o WhatsApp não abrir.
 
-- [ ] **M005 — Validar conteúdo, responsividade, acessibilidade e build** (PRD: SYS-002 a SYS-009 e §13). Executar o build e revisar links e âncoras, conteúdo em viewport de 320 px, navegação por teclado, foco visível, contraste, textos alternativos e comportamento dos CTAs. Acrescentar verificações automatizadas leves para as informações críticas, sem introduzir dependências desnecessárias.
+- [x] **M005 — Validar conteúdo, responsividade, acessibilidade e build** (PRD: SYS-002 a SYS-009 e §13). Executar o build e revisar links e âncoras, conteúdo em viewport de 320 px, navegação por teclado, foco visível, contraste, textos alternativos e comportamento dos CTAs. Acrescentar verificações automatizadas leves para as informações críticas, sem introduzir dependências desnecessárias.
   **Pré-requisitos:** M002, M003 e M004.
   **Aprovação:** `npm run build` conclui sem erros; não há divergências nos dados comerciais nem links/âncoras inválidos; a página funciona a partir de 320 px sem rolagem horizontal causada pelo layout; verificações de teclado e foco são aprovadas; as checagens automatizadas falham se as informações críticas forem alteradas incorretamente.

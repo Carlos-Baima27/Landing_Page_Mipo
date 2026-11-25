@@ -206,16 +206,16 @@ Não incluir seção de depoimentos ou métricas até que conteúdo verificável
 
 ## 13. Critérios de aceite
 
-- [ ] O site apresenta a Mipo como serviço de motoboy/entrega expressa, não como o template Vite.
-- [ ] O CTA principal abre o WhatsApp `+55 47 99762-8214` com mensagem de cotação preenchida.
-- [ ] As modalidades avulsa e recorrente são distintas e compreensíveis.
-- [ ] Balneário Camboriú e região são apresentados como a cobertura confirmada.
-- [ ] Horário (todos os dias, 24h), dinheiro, Pix e Cartão aparecem sem divergência entre seções.
-- [ ] Endereço exibido corresponde a R. 1950, 321 - Centro, Balneário Camboriú - SC.
-- [ ] Não existem depoimentos, métricas, avaliações ou imagens que aparentem ser reais sem validação.
-- [ ] A página funciona em telas de 320 px ou maiores, sem conteúdo essencial cortado ou rolagem horizontal.
-- [ ] Navegação e CTAs são utilizáveis por teclado e têm foco visível; conteúdo essencial tem contraste e semântica adequados.
-- [ ] Metadados, idioma e título foram atualizados e o build de produção conclui sem erros.
+- [x] O site apresenta a Mipo como serviço de motoboy/entrega expressa, não como o template Vite.
+- [x] O CTA principal abre o WhatsApp `+55 47 99762-8214` com mensagem de cotação preenchida.
+- [x] As modalidades avulsa e recorrente são distintas e compreensíveis.
+- [x] Balneário Camboriú e região são apresentados como a cobertura confirmada.
+- [x] Horário (todos os dias, 24h), dinheiro, Pix e Cartão aparecem sem divergência entre seções.
+- [x] Endereço exibido corresponde a R. 1950, 321 - Centro, Balneário Camboriú - SC.
+- [x] Não existem depoimentos, métricas, avaliações ou imagens que aparentem ser reais sem validação.
+- [x] A página funciona em telas de 320 px ou maiores, sem conteúdo essencial cortado ou rolagem horizontal.
+- [x] Navegação e CTAs são utilizáveis por teclado e têm foco visível; conteúdo essencial tem contraste e semântica adequados.
+- [x] Metadados, idioma e título foram atualizados e o build de produção conclui sem erros.
 
 ## 14. Pendências e decisões
 

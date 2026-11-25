@@ -1,0 +1,80 @@
+batch_id: "FASE-3"
+completed_tasks: ["M004", "M005"]
+blocked_tasks: []
+files_changed:
+  M004:
+    - file: "src/main.ts"
+      change_type: "modified"
+      description: "Personalizou mensagens de WhatsApp para entrega avulsa, contrato empresarial e documentos."
+  M005:
+    - file: "scripts/check-commercial-data.mjs"
+      change_type: "modified"
+      description: "Mantida a validação existente dos dados comerciais críticos."
+    - file: "scripts/check-page.mjs"
+      change_type: "created"
+      description: "Criadas verificações leves de âncoras, CTAs, fallback, idioma e requisitos de 320 px."
+    - file: "package.json"
+      change_type: "modified"
+      description: "Adicionado script automatizado npm test."
+    - file: "README.md"
+      change_type: "modified"
+      description: "Documentado o comando de validação npm test."
+upstream_artifacts_consumed:
+  M004:
+    - artifact: ".docs/improvement-tasks.md"
+      used_for: "Critérios de aceite da Fase 3."
+    - artifact: ".docs/prd.md"
+      used_for: "REQ-002 a REQ-004."
+  M005:
+    - artifact: ".docs/improvement-tasks.md"
+      used_for: "Critérios de validação da Fase 3."
+    - artifact: ".docs/prd.md"
+      used_for: "SYS-002 a SYS-009."
+evidence_mapping:
+  M004:
+    - upstream: ".docs/prd.md#REQ-002"
+      output: "src/main.ts"
+      evidence: "npm test"
+  M005:
+    - upstream: ".docs/prd.md#SYS-003"
+      output: "scripts/check-page.mjs"
+      evidence: "npm test"
+traceability:
+  - requirement: "REQ-002"
+    plan_item: "Fase 3/M004"
+    task: "M004"
+    files: ["src/main.ts"]
+    status: "completed"
+  - requirement: "REQ-003"
+    plan_item: "Fase 3/M004"
+    task: "M004"
+    files: ["src/main.ts"]
+    status: "completed"
+  - requirement: "REQ-004"
+    plan_item: "Fase 3/M004"
+    task: "M004"
+    files: ["src/main.ts"]
+    status: "completed"
+  - requirement: "SYS-002 a SYS-009"
+    plan_item: "Fase 3/M005"
+    task: "M005"
+    files: ["scripts/check-page.mjs", "package.json", "src/style.css"]
+    status: "completed"
+protocol_violation: false
+errors: []
+warnings:
+  - severity: MEDIUM
+    message: "A validação visual em navegador real não pôde ser executada pelo conjunto atual de ferramentas; o site foi verificado por build e checagens estáticas."
+test_results:
+  M004:
+    command: "npm test"
+    passed: 1
+    failed: 0
+    skipped: 0
+    failures: []
+  M005:
+    command: "npm run build"
+    passed: 1
+    failed: 0
+    skipped: 0
+    failures: []

@@ -1,0 +1,90 @@
+metadata:
+  generated: "2026-11-25"
+  source_tasks: ".docs/improvement-tasks.md"
+  last_updated: "2026-11-25"
+
+summary:
+  total_tasks: 2
+  completed_tasks: 2
+  in_progress_tasks: 0
+  pending_tasks: 0
+  completion_percentage: 100.0
+
+tasks:
+  - task_id: "M004"
+    description: "Personalizar mensagens dos CTAs por tipo de serviço."
+    status: "completed"
+    implementation:
+      files_changed:
+        - file: "src/main.ts"
+          changes:
+            - line_start: 15
+              line_end: 21
+              change_type: "modified"
+              description: "Criou URLs de WhatsApp específicas e mantive o número oficial."
+    verification:
+      build_passed: true
+      test_results:
+        command: "npm test"
+        passed: 1
+        failed: 0
+        skipped: 0
+        failures: []
+      notes: "Mensagens contextualizadas validadas pelo script."
+    upstream_trace:
+      plan_item: "Fase 3"
+      requirements: ["REQ-002", "REQ-003", "REQ-004"]
+      full_trace: "REQ-002 a REQ-004 → Fase 3/M004 → src/main.ts"
+
+  - task_id: "M005"
+    description: "Validar conteúdo, responsividade, acessibilidade e build."
+    status: "completed"
+    implementation:
+      files_changed:
+        - file: "scripts/check-page.mjs"
+          changes:
+            - line_start: 1
+              line_end: 61
+              change_type: "created"
+              description: "Validou links, CTAs, fallback e requisitos mínimos de layout."
+        - file: "package.json"
+          changes:
+            - line_start: 7
+              line_end: 12
+              change_type: "modified"
+              description: "Adicionou o script npm test."
+    verification:
+      build_passed: true
+      test_results:
+        command: "npm run build"
+        passed: 1
+        failed: 0
+        skipped: 0
+        failures: []
+      notes: "npm test e npm run build concluídos sem erros."
+    upstream_trace:
+      plan_item: "Fase 3"
+      requirements: ["SYS-002", "SYS-003", "SYS-004", "SYS-005", "SYS-007", "SYS-008", "SYS-009"]
+      full_trace: "SYS-002 a SYS-009 → Fase 3/M005 → scripts/check-page.mjs"
+
+pending_tasks: []
+untracked_changes: []
+
+traceability_chain:
+  - chain_id: "TRACE-FASE-3"
+    requirement: "REQ-002 a REQ-004; SYS-002 a SYS-009"
+    plan_phase: "Fase 3"
+    tasks: ["M004", "M005"]
+    files:
+      - "src/main.ts"
+      - "scripts/check-page.mjs"
+      - "package.json"
+      - "README.md"
+    status: "complete"
+
+validation:
+  passed: true
+  errors: []
+  warnings:
+    - "Validação visual em navegador real não automatizada nesta sessão."
+  blocking_issues: []

@@ -52,6 +52,13 @@ O build executa a verificação de tipos do TypeScript e gera os arquivos estát
 npm run preview
 ```
 
+Para validar os dados comerciais, os links internos, os destinos de WhatsApp e os requisitos mínimos de
+responsividade registrados no código, execute:
+
+```bash
+npm test
+```
+
 ## Estrutura do projeto
 
 ```text
