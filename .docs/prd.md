@@ -191,6 +191,19 @@ A direção e a paleta abaixo foram aprovadas para orientar a landing page. Isso
 - **Estados e movimento:** definir estados de hover, foco e pressionado para links e botões. Movimento deve ser discreto, não essencial à compreensão e respeitar `prefers-reduced-motion`.
 - **Imagens:** substituir placeholders por fotos reais da equipe/frota quando fornecidas e autorizadas. Otimizar dimensões e formato sem cortar elementos importantes; fornecer texto alternativo contextual.
 
+### Evolução visual proposta: 3D, vídeo e movimento
+
+A próxima evolução visual deve dar à página uma identidade mais moderna e imersiva, mantendo a personalidade urbana, próxima e confiável da Mipo. Esta direção amplia a composição visual, mas não altera a paleta aprovada nem autoriza alegações comerciais ou imagens que aparentem retratar a operação real sem aprovação.
+
+- **Direção de arte:** explorar uma cena 3D estilizada de entrega — por exemplo, moto, capacete e pacote — com profundidade, luz e movimento controlados. Evitar aparência genérica de aplicativo ou excesso de efeitos.
+- **Ativos visuais:** usar ilustrações 3D claramente estilizadas enquanto não houver fotos e vídeos reais autorizados. Mídia real da equipe, frota ou cidade só deve ser usada após fornecimento e autorização.
+- **Hero:** priorizar uma composição visual 3D marcante ao lado da proposta de valor e do CTA, preservando a leitura e a visibilidade do contato na primeira dobra.
+- **Movimento ao rolar:** revelar seções e elementos de forma progressiva; um elemento visual recorrente, como um pacote ou uma rota abstrata, pode conectar seções sem competir com o conteúdo.
+- **Vídeo:** quando houver mídia aprovada, usar loops curtos, otimizados e sem áudio automático. Sempre fornecer pôster/fallback estático e não depender do vídeo para comunicar conteúdo essencial.
+- **Acessibilidade e controle:** efeitos devem ser decorativos e não bloquear interação, foco ou leitura. Respeitar `prefers-reduced-motion`, oferecer apresentação estática quando necessário e evitar movimento contínuo que distraia.
+- **Desempenho e responsividade:** carregar mídias de forma eficiente, evitar dependências 3D pesadas sem justificativa e validar o resultado em telas móveis, conexões lentas e dispositivos com capacidade reduzida.
+- **Progressão de implementação:** confirmar a direção de arte e a estratégia de ativos; preparar os ativos; atualizar o hero; adicionar efeitos de rolagem; integrar vídeo aprovado; por fim, revisar responsividade, acessibilidade e desempenho. As tarefas detalhadas estão em `.docs/improvement-tasks.md`.
+
 ## 12. Conteúdo e estrutura sugeridos
 
 1. Cabeçalho e navegação.
@@ -203,6 +216,7 @@ A direção e a paleta abaixo foram aprovadas para orientar a landing page. Isso
 8. Rodapé com endereço, horário, pagamentos e links oficiais confirmados.
 
 Não incluir seção de depoimentos ou métricas até que conteúdo verificável seja disponibilizado.
+Na evolução visual, cenas 3D e movimento devem apoiar essa estrutura sem ocultar o conteúdo, alterar as informações comerciais ou atrasar o acesso ao WhatsApp.
 
 ## 13. Critérios de aceite
 
@@ -216,11 +230,15 @@ Não incluir seção de depoimentos ou métricas até que conteúdo verificável
 - [x] A página funciona em telas de 320 px ou maiores, sem conteúdo essencial cortado ou rolagem horizontal.
 - [x] Navegação e CTAs são utilizáveis por teclado e têm foco visível; conteúdo essencial tem contraste e semântica adequados.
 - [x] Metadados, idioma e título foram atualizados e o build de produção conclui sem erros.
+- [ ] A cena 3D é claramente ilustrativa até que fotos ou vídeos reais tenham sido fornecidos e autorizados.
+- [ ] Os efeitos ao rolar são progressivos, não essenciais à compreensão e respeitam `prefers-reduced-motion`.
+- [ ] Vídeos, se usados, são aprovados, otimizados, silenciosos por padrão e possuem fallback estático.
+- [ ] A evolução visual preserva a acessibilidade, a responsividade a partir de 320 px e o desempenho da página.
 
 ## 14. Pendências e decisões
 
-1. Aprovar ou substituir a direção visual proposta; fornecer logo, cores, fontes e eventuais referências.
-2. Fornecer fotos reais da equipe/frota e autorizar seu uso.
+1. Aprovar a direção visual 3D urbana proposta e referências de estilo; logo, cores, fontes e demais aplicações de marca ainda dependem de confirmação.
+2. Fornecer fotos e vídeos reais da equipe/frota, se desejados, e autorizar seu uso; até lá, usar ativos 3D estilizados que não sugiram representar a operação real.
 3. Confirmar outras cidades, se houver, antes de anunciá-las como cobertas.
 4. Fornecer perfis oficiais de redes sociais, caso devam aparecer no rodapé.
 5. Revisar textos comerciais finais, especialmente alegações sobre agilidade e segurança, para confirmar que refletem a operação real.
